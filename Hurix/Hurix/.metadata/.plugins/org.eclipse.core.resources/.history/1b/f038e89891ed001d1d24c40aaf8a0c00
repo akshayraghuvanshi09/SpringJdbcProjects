@@ -1,0 +1,5 @@
+package com.testingmapping.demo.responsedto;
+
+public class AdminResponseDTO {
+
+}

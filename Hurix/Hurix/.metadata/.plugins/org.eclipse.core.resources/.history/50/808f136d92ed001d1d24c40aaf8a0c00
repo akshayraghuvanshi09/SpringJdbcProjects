@@ -1,0 +1,25 @@
+package com.testingmapping.demo.responsedto;
+
+import javax.persistence.OneToMany;
+
+import com.testingmapping.demo.entity.Address;
+import com.testingmapping.demo.entity.Hotel;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Setter
+@Getter
+public class AdminResponseDTO {
+	private String adminName;
+	@OneToMany
+	private Address adminAddress;
+	
+	@OneToMany
+	private Hotel hotels;
+}

@@ -1,0 +1,61 @@
+package com.testingmapping.demo.serviceimpl;
+
+import java.util.List;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.stereotype.Service;
+
+import com.testingmapping.demo.entity.Admin;
+import com.testingmapping.demo.repo.AdminRepo;
+import com.testingmapping.demo.requestdto.AdminRequestDTO;
+import com.testingmapping.demo.responsedto.CommonResponseDTO;
+import com.testingmapping.demo.service.AdminService;
+@Service
+public class AdminServiceIMPL<T> implements AdminService<T>
+{
+
+	@Autowired
+	private AdminRepo adminRepo;
+	@Autowired
+	private ModelMapper mapper;
+	@SuppressWarnings("unchecked")
+	@Override
+	public T save(AdminRequestDTO adminRequestDTO) {
+		Admin map = mapper.map(adminRequestDTO,Admin.class);
+		adminRepo.save(map);
+		return (T) new CommonResponseDTO("Success",200,map);
+	}
+
+	@Override
+	public T getSingleById(Integer id) {
+
+		return null;
+	}
+
+	@Override
+	public List<T> getAll() {
+
+		return null;
+	}
+
+	@Override
+	public T updateById(Integer id, AdminRequestDTO adminRequestDTO) {
+
+		return null;
+	}
+
+	@Override
+	public T deleteById(Integer id) {
+
+		return null;
+	}
+
+	@Override
+	public T deleteAll() {
+
+		return null;
+	}
+
+}

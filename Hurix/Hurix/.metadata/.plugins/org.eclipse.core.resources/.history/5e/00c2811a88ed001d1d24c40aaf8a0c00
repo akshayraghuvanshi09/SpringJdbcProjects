@@ -1,0 +1,5 @@
+package com.testingmapping.demo.entity;
+
+public class User {
+
+}

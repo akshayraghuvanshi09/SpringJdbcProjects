@@ -1,0 +1,9 @@
+package com.testingmapping.demo.requestdto;
+
+public class AddressRequestDTO {
+
+	private String placeName;
+	private String cityName;
+	private String stateName;
+	private String countryName;
+}

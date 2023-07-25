@@ -1,0 +1,10 @@
+package com.testingmapping.demo.service;
+
+import com.testingmapping.demo.requestdto.AdminRequestDTO;
+
+public interface AdminService<T> 
+{
+
+	T save(AdminRequestDTO adminRequestDTO);
+	
+}

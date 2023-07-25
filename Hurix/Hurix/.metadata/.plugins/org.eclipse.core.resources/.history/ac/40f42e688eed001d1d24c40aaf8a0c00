@@ -1,0 +1,8 @@
+package com.testingmapping.demo.responsedto;
+
+public class CommonResponseDTO {
+
+	private String Status;
+	private Integer statusCode;
+	private Object data;
+}

@@ -1,0 +1,11 @@
+
+Š
+java:S1128"RRemove this unused import 'com.testingmapping.demo.responsedto.CommonResponseDTO'.(Àý©Çþÿÿÿÿ8ü¿ Øÿ0H‡!RMINORZ
+CODE_SMELL
+v
+java:S1128	"CRemove this unused import 'com.testingmapping.demo.entity.Address'.(”üÃÛ8Ü‡ôØÿ0H¬"RMINORZ
+CODE_SMELL
+y
+java:S1128
+"ARemove this unused import 'com.testingmapping.demo.entity.Hotel'.(œ´†¢ûÿÿÿÿ8Ü‡ôØÿ0H®"RMINORZ
+CODE_SMELL

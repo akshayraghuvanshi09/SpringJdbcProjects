@@ -1,0 +1,16 @@
+package com.testingmapping.demo.requestdto;
+
+import javax.persistence.OneToMany;
+
+import com.testingmapping.demo.entity.Address;
+import com.testingmapping.demo.entity.Hotel;
+
+public class AdminRequestDTO {
+
+	private String adminName;
+	@OneToMany
+	private Address adminAddress;
+	
+	@OneToMany
+	private Hotel hotels;
+}

@@ -1,0 +1,29 @@
+package com.hurixtask.responsedto;
+
+import java.util.Map;
+
+import com.hurixtask.demo.model.User;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class UserResponseDTO<T> {
+
+//	private String url;
+//	private String method;
+//	private Map<String,String> header;
+//	private Map<String,String> queryParameter;
+//	private String body;
+//	private T responseBody;
+//	private String responseHeader;
+//	private Integer httpStatus;
+	private T httpStatus;
+	private T body;
+	private T header;
+	private T httpStatusValue;
+	
+}

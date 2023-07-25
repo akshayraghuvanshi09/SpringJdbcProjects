@@ -1,0 +1,41 @@
+package com.hurixtask.demo.serviceimpl;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import com.hurixtask.dao.UserDao;
+import com.hurixtask.demo.model.User;
+import com.hurixtask.demo.service.UserService;
+import com.hurixtask.responsedto.UserResponseDTO;
+
+import lombok.extern.slf4j.Slf4j;
+@Service
+public class UserServiceIMPL implements UserService
+{
+	@Autowired
+	private UserDao dao;
+	@Autowired
+	private RestTemplate restTemplate;
+	
+	@Override
+	public UserResponseDTO callingToAnotherService(String header, String queryBody, String queryParam,
+			User user) {
+		
+		String forObject = restTemplate.getForObject(user.getUrl(),String.class);
+		
+		UserResponseDTO dto=new UserResponseDTO<>();
+		dto.setUrl(user.getUrl());
+		dto.setMethod(user.getMethod());
+		dto.setHeader(header);
+		dto.setQueryParameter(queryParam);
+		dto.setBodyParameter(queryBody);
+		dto.setBody(user.getBody());
+		dto
+		return dto;
+	}
+
+	
+	
+}

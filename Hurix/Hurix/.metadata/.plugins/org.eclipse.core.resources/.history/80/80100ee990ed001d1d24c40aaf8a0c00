@@ -1,0 +1,13 @@
+package com.testingmapping.demo;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class TestingmappingApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(TestingmappingApplication.class, args);
+	}
+
+}

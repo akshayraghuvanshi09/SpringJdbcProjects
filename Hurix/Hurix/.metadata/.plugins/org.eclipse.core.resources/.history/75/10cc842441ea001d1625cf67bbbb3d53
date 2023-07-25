@@ -1,0 +1,5 @@
+package com.hurixtask.demo.model;
+
+public class User {
+
+}

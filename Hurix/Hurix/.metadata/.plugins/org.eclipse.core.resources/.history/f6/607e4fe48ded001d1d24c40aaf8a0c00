@@ -1,0 +1,8 @@
+package com.testingmapping.demo.service;
+
+public class AdminService<T> 
+{
+
+	T save(Admin);
+	
+}

@@ -1,0 +1,8 @@
+package com.testingmapping.demo.responsedto;
+
+public class AddressResponseDTO {
+	private String placeName;
+	private String cityName;
+	private String stateName;
+	private String countryName;
+}

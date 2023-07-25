@@ -1,0 +1,45 @@
+package com.hurixtask.controller;
+
+import java.awt.PageAttributes.MediaType;
+import java.net.http.HttpHeaders;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestPart;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.hurixtask.demo.model.User;
+import com.hurixtask.demo.service.UserService;
+import com.hurixtask.responsedto.UserResponseDTO;
+
+import lombok.extern.slf4j.Slf4j;
+
+@RestController
+@Slf4j
+public class UserController {
+ 
+	@Autowired
+	private UserService service;
+	@Autowired
+	private ObjectMapper mapper;
+	
+	@PostMapping("/test")
+	public UserResponseDTO test(HttpServletRequest httpServletRequest,@RequestPart("user") String user) throws JsonMappingException, JsonProcessingException
+	{
+		
+		User readValue = mapper.readValue(user,User.class);
+		log.info(" testCalling Service Call");
+		return service.testCalling(httpServletRequest,readValue);
+		
+	}
+}

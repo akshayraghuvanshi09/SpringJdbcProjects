@@ -1,0 +1,5 @@
+package com.testingmapping.demo.controller;
+
+public class AdminController {
+
+}

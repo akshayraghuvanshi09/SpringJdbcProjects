@@ -1,0 +1,8 @@
+package com.testingmapping.demo.serviceimpl;
+
+import com.testingmapping.demo.service.AdminService;
+
+public class AdminServiceIMPL implements AdminService<T>
+{
+
+}

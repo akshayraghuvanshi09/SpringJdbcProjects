@@ -1,0 +1,10 @@
+
+k	java:S125E"<This block of commented-out lines of code should be removed.(’•îæýÿÿÿÿHRMAJORZ
+CODE_SMELL
+L
+java:S1116C"Remove this empty statement.(ôŸŽìúÿÿÿÿHRMINORZ
+CODE_SMELL
+„
+java:S2293:"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ùðœ…H
+RMINORZ
+CODE_SMELL

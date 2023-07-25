@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Built-By: Its
+Build-Jdk: 17.0.4.1
+Implementation-Title: jdbc-template
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.rangers
+Implementation-Vendor: Pivotal Software, Inc.
+Created-By: Maven Integration for Eclipse
+

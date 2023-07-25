@@ -1,0 +1,25 @@
+package com.hurixtask.responsedto;
+
+import com.hurixtask.demo.model.User;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Setter
+@Getter
+public class FetchResponseFromAnotherApi {
+
+	private Integer responseCode;
+	private String  responseMsg;
+	private String  userToken;
+	private User user;
+	private String instituteID;
+	private String clientID;
+	
+}
